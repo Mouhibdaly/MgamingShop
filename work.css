@@ -1,0 +1,281 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  background-image: url("https://wallpapercave.com/wp/wp2694502.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.grid-container {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 120px;
+}
+.grid-item {
+  text-align: center;
+  height: auto;
+  width: auto;
+}
+.card {
+  background:#FFFFFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  top : 100px ;
+  left : 37%;
+  width: 300px;
+  height: 230px;
+  border: 1px solid #FFFFFF;
+  perspective: 1000px;
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+.card button {
+  margin-top: 24px;
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 300px;
+  font-size: 18px;
+}
+.card button:hover {
+  opacity: 0.7;
+}
+section
+{
+  padding: 20px;
+  width: 1280px;
+  margin: 40px auto;
+}
+section ul
+{
+display:flex;
+margin-bottom: 10px;
+justify-content: center;
+transition: 0.2s;
+
+}
+section ul li
+{
+  list-style: none;
+  padding: 12px 30px;
+  margin: 6px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+section ul li:hover
+{
+  background-image: url("C:\Users\ASUS\Desktop\rbk projects\rbk cohort 6 solo project\images\btn-bg2.png");
+  transition: 0.5s;
+  color: rgb(196, 23, 23);
+}
+#logo {
+  display: inline-block;
+  float: left;
+}
+.flip-card {
+/*  position : absolute ;
+*/  top : 10%;
+  left : 37%;
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  color: black;
+}
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+img {
+  margin: -1px 1px;
+  margin-left: -1px;
+  height: 232px;
+  width: 302px;
+  object-fit: cover;
+}
+
+#logo {
+  display: inline-block;
+  float: left;
+}
+.flip-card {
+/*  position : absolute ;
+*/  top : 10%;
+  left : 37%;
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  color: black;
+}
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+img {
+  margin: -1px 1px;
+  margin-left: -1px;
+  height: 232px;
+  width: 302px;
+  object-fit: cover;
+}
+
+
+.container{
+  max-width : 1170px;
+  margin :auto;
+}
+.row{
+  display : flex ; 
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+
+.footer {
+  background-color: #24262b;
+  padding: 50px 0 ;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.footer-col {
+  width: 22%;
+  padding: 0 15px ;
+}
+
+.footer-col h4{
+  font-size: 18px;
+  color: #423c97;
+  text-transform:capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+} 
+
+.footer-col h4::before {
+ content: '';
+ position: absolute;
+ left:0;
+ bottom:-10px;
+ background-color:#e91e63;
+ height : 2px;
+ box-sizing: border-box;
+ width : 50px 
+}  
+
+.footer-col ul li :not(:last-child){
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight : 300;
+  color : #bbbbbb;
+  display: block;
+  transition: all 0.3s ease; 
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left:10px;
+}
+
+.footer-col .social-links a{
+  display:inline-block ;
+  height:40px;
+  width:40px;
+  background-color: rgba(255,255,255,0.2);
+  margin : 0 10px 10px 0;
+  text-align: center ;
+  line-height: 40px;
+}
+
+#dialog{
+  background-color:rgb(205, 18, 18) ;
+  position: flex;
+  right: 150px;
+  width: 300px;
+  height: 300px;
+  border: 3px solid green;
+}
+.cartItem{
+  display:flex;
+}
+.delete{
+  margin-left: 30px;
+}
+#totalDiv{
+  display: flex;
+  background-color: white;
+  position: relative;
+  float:right;
+  bottom:0;
+}
+
+#logo{
+  height:150px;
+  width:150px
+}
+
